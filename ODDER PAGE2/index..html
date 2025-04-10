@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    
+    }
+        body{
+            background-image: url(../page_bg2.jpg);
+            background-size: 100% 1050px;
+            background-repeat: no-repeat;
+            background-color: rgba(0,0,0,0.9);
+        }
+        #online{
+            width: 100%;
+            height: 100px;
+            border: solid 1px #ccc;
+            background-color: rgba(0,0,0,0.5);
+        }
+        #odder{
+            margin-top: 5px;
+            text-align: center;
+          color: white;
+          font-size: 45px;
+          font-family: calibri;
+        }
+        #text{
+            text-align: center;
+          color: white;
+          margin-top: 10px; 
+          font-family: sans-serif;
+        }
+        #odderlist{
+            width: 450px;
+            height: 700px;
+        
+            margin: 100px;
+            float: left;
+          
+        }
+        #info{
+            color:white ;
+            text-align: center;
+        }
+        #odder-list{
+            Color:white;
+            font-family:century gothic;
+            font-size:20px;
+            margin-top:60px;
+        }
+        #one,#two,#three,#four,#five{
+            background-color:rgba(0,0,0,0.5);
+            width:450px;
+            height:30px;
+            border:2px solid white;
+            box-shadow:5px 5px 10px rgba(0,0,0,0.4);
+            color:white;
+            font-family:century gothic;
+        }
+        #address{
+            background-color:rgba(0,0,0,0.5);
+            width:450px;
+            border:2px solid white;
+            box-shadow:5px 5px 10px rgba(0,0,0,0.4);
+            color:white;
+            font-family:century gothic;
+        }
+        #btn{
+            box-shadow:5px 5px 10px rgba(0,0,0,0.4);
+            background-color:rgba(0,0,0,0.5);
+            color: white;
+            width: 50px;
+            height: 40px;
+            font-family:century gothic;
+            float:left;
+            margin-top: 50px;
+            border: 2px solid white;
+            margin-left: 350px;
+
+        }
+        #print{
+            width: 35%;
+            height: 305px;
+            border: #ccc solid 2px;
+            float: right;
+            margin: 100px;
+            background-image: url(../card.jpg);
+            background-size: 100% 304px;
+            padding: 40px;
+            background-repeat: no-repeat;
+        }
+        #mobile,#phone{
+            margin-left: 280px;
+            color: red;
+            font-size: 15px;
+            font-family:Comic Sans MS;
+            
+        }
+        #name{
+            color: yellow;
+            font-size: 21px;
+            text-transform: capitalize;
+            margin-left: 50px;
+            padding-top: 10px;
+
+        }
+        #father,#email,#addresss{
+            color: white;
+            font-size: 15px;
+            font-family:century gothic;
+            line-height: 30px;
+            text-transform: capitalize;
+
+        }
+        #box{
+            width: 35%;
+            height:30px;
+            border: #ccc solid 2px;
+            float: left;
+            margin-top: 0%;
+            margin-left: 128px;
+            position: relative;
+            bottom:100px;
+          
+        }
+        #btns{
+            float: left;
+            width: 22% ;
+            height: 25px;
+            text-align: center;
+            border: white solid 2px;
+            background-color: white;
+            margin-left: 10px;
+            padding-top: px;
+
+              
+        }
+        
+
+
+    </style>
+    <script>
+        function online(){
+            var a=document.getElementById("one").value
+            var b=document.getElementById("two").value
+            var c=document.getElementById("three").value
+            var d=document.getElementById("four").value
+            var e=document.getElementById("five").value
+            var f=document.getElementById("address").value
+
+            var g=document.getElementById("mobile");g.innerHTML=b;
+
+            var h=document.getElementById("phone");h.innerHTML=c;
+
+            var i = document.getElementById("name");i.innerHTML = a;
+
+            var j =document.getElementById("father");j.innerHTML =d;
+
+            var k = document.getElementById("email");k.innerHTML =e;
+
+            var l =document.getElementById("addresss");l.innerHTML=f; 
+        }
+        	
+function bold()
+{
+		var a = document.getElementById("father");
+			a.style.fontWeight = "bold";
+			
+		var b = document.getElementById("email");
+			b.style.fontWeight = "bold";
+			
+		var f = document.getElementById("addresss");
+			f.style.fontWeight = "bold";
+}
+function italic()
+{
+		var a = document.getElementById("father");
+			a.style.fontStyle = "italic";
+			
+		var b = document.getElementById("email");
+			b.style.fontStyle = "italic";
+			
+		var f = document.getElementById("addresss");
+			f.style.fontStyle = "italic";
+}
+function undo()
+{
+		var a = document.getElementById("father");
+			a.style.fontStyle = "normal";
+			
+		var b = document.getElementById("email");
+			b.style.fontStyle = "normal";
+			
+		var f = document.getElementById("addresss");
+			f.style.fontStyle = "normal";
+			
+		var a = document.getElementById("father");
+			a.style.fontWeight = "normal";
+			
+		var b = document.getElementById("email");
+			b.style.fontWeight = "normal";
+			
+		var f = document.getElementById("addresss");
+			f.style.fontWeight = "normal";
+}
+
+
+function prin()
+{
+	document.print();
+}
+    </script>
+</head>
+<body>
+ <div id="online">
+    
+<h1 id="odder" >Online Odder</h1>
+<h3 id="text">this is online odder list</h3>
+
+</div>
+    <div id="odderlist">
+        <h1 id="info">Type Your Information Here</h1>
+        <form id="odder-list">
+           Your Name: <br>
+           <input type="text" id="one"><br><br>
+           Mobile Num.: <br>
+           <input type="number" name="number" id="two"><br><br>
+           Alternate Mobile No. : <br>
+           <input type="number" name="number" id="three"><br><br>
+           S/O,W/O,D/O: <br>
+           <input type="text" name="text" id="four"> <br><br>
+           Email id: <br>
+           <input type="email\" name="text" id="five"><br><br>
+           Address: <br>
+           <textarea name="" id="address" cols="30" rows="10"></textarea>
+        </form>
+        <input type="submit" name="make" value="MAKE" id="btn" onclick="online();">
+
+    </div>
+    
+    <div id="print">
+        <p id="mobile"> </p>
+        <p id="phone"></p>
+        <p id="name"></p>
+        <p id="father"></p>
+        <p id="email"></p>
+        <p id="addresss"></p>
+    </div>
+    <div id="box">
+        <div id="btns" onclick="print();"> Print</div>
+        <div id="btns" onclick="bold();"> Bold</div>
+        <div id="btns" onclick=" italic();">Italic</div>
+        <div id="btns" onclick=" undo()"> Undo</div>
+         
+
+    </div>
+   
+</body>
+</html>
